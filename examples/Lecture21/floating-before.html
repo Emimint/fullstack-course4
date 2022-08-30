@@ -1,54 +1,111 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Floating Elements</title>
-<style>
+  <meta charset="utf-8">
+  <title>Floating Elements</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      /* color: black; */
+      /* font-size: 1.07rem; */
+      font-weight: bolder;
+    }
 
-body{
-  background-color: pink;
-}
+    .test {
+      background-color: #75e934;
+      font-family: cursive;
+      text-transform: capitalize;
+      text-align: center;
+      line-height: 2;
+    }
 
-div {
-  background-color: #00FFFF;
-}
-p {
-  width: 50px;
-  height: 50px;
-  border: 1px solid black;
-  margin: 0 auto;
-}
+    body {
+      font-style: italic;
+      /* background: url(C:/Users/NOOPP/Documents/puppy.jpg) #3f51b5; */
+      /* background: #3f51b5; */
+    }
 
-#p1 {
-  background-color: #A52A2A;
-  /* float: right; */
-  /* height: 100px; */
-}
-#p2 {
-  background-color: #DEB887;
-  /* text-align: center; */
-}
-#p3 {
-  background-color: #5F9EA0;
-}
-#p4 {
-  background-color: #FF7F50;
-}
+    div:not(.test) {
+      background-color: mediumaquamarine;
+      /* background-color: #00FFFF; */
+    }
 
-</style>
+    div {
+      padding: 5px 0 5px 0;
+    }
+
+    #that_div {
+      position: static;
+    }
+
+    p:not(#test) {
+      /* margin-top: 2em; */
+      width: 50px;
+      height: 50px;
+      padding: 5px;
+      border: 1px solid black;
+      /* float: inherit; */
+      /* margin: 0 auto; */
+    }
+
+    #p1 {
+      background-color: #A52A2A;
+      float: right;
+      /* height: 100px; */
+    }
+
+    #p2 {
+      background-color: #DEB887;
+      position: absolute;
+      left: 50px;
+      /* bottom: 50px; */
+      /* text-align: center; */
+    }
+
+    #p3 {
+      background-color: #5F9EA0;
+      /* margin-top: 50px; */
+    }
+
+    #p4 {
+      background-color: #FF7F50;
+    }
+  </style>
 </head>
+
 <body>
-<h1>Floating Elements</h1>
+  Can I write here?
+  <h1>Floating Elements</h1>
+  <h2>Test du H2 </h2>
+  <h3>Test du H3 </h3>
+  <h4>Test du H4 </h4>
+  <h5>Test du H5 </h5>
+  <h6>Test du H6 </h6>
 
-<div>
-  <p id="p1"></p>
-  <!-- No! I don't wanna disapear!!! -->
-  <!-- <p id="p2"></p>
-  <p id="p3"> </p>
-  <p id="p4"></p> -->
-  <!-- <section>This is regular content continuing after the the paragraph boxes.</section> -->
-</div>
-
+  <div id="that_div">
+    Can I write here?
+    <p id="test">
+      Can I write here?
+    </p>
+    <p id="p1">
+      <!-- Can I write here? -->
+    </p>
+    <!-- No! I don't wanna disapear!!! -->
+    <p id="p2"></p>
+    <p id="p3"> </p>
+    <p id="p4"></p>
+    <section>This is regular content continuing after the the paragraph boxes.</section>
+  </div>
+  <br>
+  <div class="test">
+    Can I write here?
+    <br>
+    <!-- <br> -->
+    <button class="button button1">Yup</button>
+    <button class="button button2">Nope</button>
+  </div>
 
 </body>
+
 </html>
