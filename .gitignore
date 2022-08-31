@@ -3,7 +3,6 @@ node_modules
 *
 *.css
 *.html
-C:\Users\NOOPP\Desktop\JavaScript_React_Angular\JS_Projects\Coursera_Full_Stack_Course\examples\
-C:\Users\NOOPP\Desktop\JavaScript_React_Angular\JS_Projects\Coursera_Full_Stack_Course\assignments\
-examples/
+/examples
+/assignments
 .gitignore
